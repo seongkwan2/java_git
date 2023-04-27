@@ -2,10 +2,14 @@ package main;
 
 import java.util.Scanner;
 
+import login.Login;
+
 public class MainClass {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int num;
+		
+		Login l = new Login();
 		
 		while(true) {
 			System.out.println("1.로그인 기능");
@@ -14,6 +18,7 @@ public class MainClass {
 			num = input.nextInt();
 			switch(num) {
 			case 1:
+				l.login();
 				break;
 			case 2:
 				break;
