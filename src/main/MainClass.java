@@ -2,12 +2,24 @@ package main;
 
 import java.util.Scanner;
 
+
 import login.Login;
+
+import board.BoardService;
+
+import member.MemberSignup;
+
+
 
 public class MainClass {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int num;
+
+		
+		BoardService bo = new BoardService();
+
+		MemberSignup mem = new MemberSignup();
 		
 		Login l = new Login();
 		
@@ -20,9 +32,10 @@ public class MainClass {
 			case 1:
 				l.login();
 				break;
-			case 2:
+			case 2: mem.signup();
 				break;
 			case 3:
+				bo.board();
 				break;
 			}
 			
