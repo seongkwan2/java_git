@@ -15,7 +15,7 @@ public class EventSeviceImpl implements EventSevice {
 		String[] events = {"과일 세일", "소고기 세일", "생선 세일", 
 				"전자제품 세일", "라면 세일", "짜장면 세일", 
 				"피자 세일", "치킨 세일", "족발 세일", 
-				"세일", "삼겹살 세일", "새우 세일"};
+				"세일", "삼겹살 세일", "새우세일"};
 
 		System.out.println("=== " + month + "월 달의 이벤트 ===");
 		System.out.println(month + "월달의 이벤트는 >>>" + events[month - 1] + "<<< 입니다.");
