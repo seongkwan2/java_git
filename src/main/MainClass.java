@@ -2,6 +2,8 @@ package main;
 
 import java.util.Scanner;
 
+import event.EventSeviceImpl;
+
 public class MainClass {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -24,9 +26,14 @@ public class MainClass {
 				break;
 			case 2 : System.out.println("1.이달의 이벤트 보기 2.전체 이벤트 보기");
 			 	 	 num = input.nextInt();
+			 	 	 EventSeviceImpl event = new EventSeviceImpl();
 			 	 	 switch(num) {
-			 	 	 case 1 : break;
-			 	 	 case 2 : break;
+			 	 	 case 1 :
+			 	 		 event.EventView();
+			 	 		 break;
+			 	 	 case 2 : 
+			 	 		 event.AllEventView();
+			 	 		 break;
 			 	 	 }
 				break;
 			case 3 : System.out.println("1.불만등록 2.불만보기");
