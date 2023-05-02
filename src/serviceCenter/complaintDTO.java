@@ -3,7 +3,7 @@ package serviceCenter;
 import java.util.ArrayList;
 
 public class complaintDTO {
-	private ArrayList<String> ss;
+	private ArrayList<String> ss = new ArrayList<>();
 
 	public ArrayList<String> getSs() {
 		return ss;

@@ -5,12 +5,15 @@ import java.util.Scanner;
 import event.EventSeviceImpl;
 import member.MemberService;
 import member.MemberServicempl;
+import serviceCenter.ServiceCenter;
+import serviceCenter.ServiceCenterImpl;
 
 public class MainClass {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int num = 0;
 		MemberService mem = new MemberServicempl();
+		ServiceCenter ser = new ServiceCenterImpl();
 		
 		while(true) {
 			System.out.println("1.회원이동 2.이벤트이동 3.고객센터");
@@ -44,8 +47,10 @@ public class MainClass {
 			case 3 : System.out.println("1.불만등록 2.불만보기");
 			 		 num = input.nextInt();
 			 		switch(num) {
-			 	 	 case 1 : break;
-			 	 	 case 2 : break;
+			 	 	 case 1 : ser.complaintAdd();
+			 	 		 break;
+			 	 	 case 2 : ser.complaintView();
+			 	 		 break;
 			 	 	 }
 				break;
 
