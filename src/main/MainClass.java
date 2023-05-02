@@ -7,6 +7,7 @@ public class MainClass {
 		Scanner input = new Scanner(System.in);
 		int num = 0;
 		
+		
 		while(true) {
 			System.out.println("1.회원이동 2.이벤트이동");
 			try {
@@ -15,7 +16,10 @@ public class MainClass {
 				input.nextLine();
 			}
 			switch(num) {
-			case 1 : break;
+			case 1 :
+				
+				
+				break;
 			case 2 : break;
 			case 3 : break;
 			}
