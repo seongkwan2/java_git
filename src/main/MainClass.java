@@ -2,6 +2,8 @@ package main;
 
 import java.util.Scanner;
 
+import event.EventSeviceImpl;
+
 public class MainClass {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -16,7 +18,10 @@ public class MainClass {
 			}
 			switch(num) {
 			case 1 : break;
-			case 2 : break;
+			case 2 : 
+				EventSeviceImpl event = new EventSeviceImpl();
+				event.EventView();
+				break;
 			case 3 : break;
 			}
 		}
