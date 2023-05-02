@@ -2,6 +2,7 @@ package event;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Scanner;
 
 public class EventSeviceImpl implements EventSevice {
 
@@ -9,6 +10,7 @@ public class EventSeviceImpl implements EventSevice {
 	public void EventView() {
 		Date d = new Date();
 		SimpleDateFormat s = new SimpleDateFormat("M");
+
 		int month = Integer.parseInt(s.format(d));
 		String[] events = {"과일 세일", "소고기 세일", "생선 세일", 
 				"전자제품 세일", "라면 세일", "짜장면 세일", 
@@ -35,10 +37,9 @@ public class EventSeviceImpl implements EventSevice {
 		}
 		System.out.println();
 	}
+
+
 }
-
-
-
 
 
 
